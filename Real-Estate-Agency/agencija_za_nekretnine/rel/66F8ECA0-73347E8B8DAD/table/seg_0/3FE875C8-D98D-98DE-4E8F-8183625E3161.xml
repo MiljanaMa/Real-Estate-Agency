@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3FE875C8-D98D-98DE-4E8F-8183625E3161" name="zakup">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>FB5E8F0D-A3D7-8812-1FDE-F965EAE59617</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dat_poc_z" id="2E4C3324-6DA6-ECB5-7A10-D6E21CF7A818">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>8F7478B6-2EC2-1174-919C-9987A5439280</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dat_kr_z" id="27F03B96-C5E7-FA8F-C84E-E6E30B7672CD">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>69190F53-F6F2-D256-553B-607714F47E79</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<constraintName>chk_dat_kr_z</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="dat_kr_z &gt;= dat_poc_z"/>
+<implementationDef dbType="Oracle Database 11g" definition="dat_kr_z &gt;= dat_poc_z"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="depozit" id="78269F93-86B8-6086-5C28-C7DFADDF1DC0">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>F0279BCE-3E45-E717-F7FE-6ED2ABC7A69E</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<constraintName>chk_depozit</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="depozit &gt;= 0"/>
+<implementationDef dbType="Oracle Database 11g" definition="depozit &gt;= 0"/>
+</checkConstraint>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cena_z" id="D6372DF8-19A6-1753-586A-5E7170EAB19B">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>7A0275EF-5A03-0505-92CF-3AE256198F35</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<constraintName>chk_cena_z</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cena_z &gt;= 1"/>
+<implementationDef dbType="Oracle Database 11g" definition="cena_z &gt;= 1"/>
+</checkConstraint>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idn" id="48A37923-EF13-E8F6-F310-E107841EE6E8">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:34 UTC</createdTime>
+<generatorID>2D77A81B-B1F3-F03C-FFE5-DAAB4E8BAEC7</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C65CC9D5-DC95-3D44-C3E3-D954EC5A8F3A" referredColumn="501D62F1-A9DD-00AF-D4E3-2BD35FFF435F"/>
+</associations>
+</Column>
+<Column name="idk" id="33993B38-8BE0-B5D0-051E-AEBBCCFA3ED9">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:34 UTC</createdTime>
+<generatorID>1851BE8D-8E61-C972-D1B8-11E5A425E609</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2A52B1A5-D336-9505-60F2-EED0B7B2E0A9" referredColumn="9C27FB2B-2C1B-5E9E-1097-753C980BB996"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6A4C634D-4D1F-8DBF-ED21-F659164FEE41" name="zakup_PK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:34 UTC</createdTime>
+<generatorID>EA2C3962-79D3-396E-ACDE-027A8F63C05F</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E4C3324-6DA6-ECB5-7A10-D6E21CF7A818"/>
+<colUsage columnID="48A37923-EF13-E8F6-F310-E107841EE6E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C05EA9E-AB15-7FC7-7C1E-753681952F86" name="zakup_nekretnina_FK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:16:13 UTC</createdTime>
+<generatorID>A4BED584-94F4-96E1-04D1-EFC37DED0B62</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48A37923-EF13-E8F6-F310-E107841EE6E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43248E60-6017-0DDE-0481-08E451DAC7D0" name="zakup_zakupac_FK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:16:13 UTC</createdTime>
+<generatorID>8CB383EC-E1CE-510A-B93C-F07E67D3E7A3</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33993B38-8BE0-B5D0-051E-AEBBCCFA3ED9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

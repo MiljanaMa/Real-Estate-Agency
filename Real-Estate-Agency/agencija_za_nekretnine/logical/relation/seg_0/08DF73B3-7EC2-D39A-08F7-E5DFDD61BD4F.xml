@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ima_naredjenog" directorySegmentName="seg_0" id="08DF73B3-7EC2-D39A-08F7-E5DFDD61BD4F">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 19:13:01 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<targetPk>1F3EF1FC-923E-D5B6-6937-352EE045A968</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1461FA97-ED51-A06D-B948-996F2E8F7A3B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1461FA97-ED51-A06D-B948-996F2E8F7A3B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

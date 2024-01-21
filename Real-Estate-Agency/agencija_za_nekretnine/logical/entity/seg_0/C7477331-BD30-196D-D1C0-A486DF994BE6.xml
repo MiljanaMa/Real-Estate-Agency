@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C7477331-BD30-196D-D1C0-A486DF994BE6" name="kuca">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:39:09 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>18440C00-D7D9-67F8-01CB-4582375FD85A</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="br_sprat" id="315C18E4-3645-77CB-BC52-87D72E6F604E">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:39:25 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<constraintName>chk_br_sprat</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="br_sprat &gt; 0"/>
+<implementationDef dbType="Oracle Database 11g" definition="br_sprat &gt; 0"/>
+</checkConstraint>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="povrs_plac" id="73D652C9-D957-4AD5-CA4D-193741F2E39B">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:39:42 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<constraintName>chk_povrs_plac</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="povrs_plac &gt; 0"/>
+<implementationDef dbType="Oracle Database 11g" definition="povrs_plac &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

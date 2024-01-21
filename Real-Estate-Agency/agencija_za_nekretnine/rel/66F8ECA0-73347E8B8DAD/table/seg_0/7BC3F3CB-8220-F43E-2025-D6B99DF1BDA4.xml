@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7BC3F3CB-8220-F43E-2025-D6B99DF1BDA4" name="tip_cene">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>FFFFF06F-56AB-2DF3-3DC2-DE4B1CD855C1</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idtc" id="0D455688-3237-AB40-7539-1E0F3B2020E6">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>0EF268DC-A1C0-A8D8-92E0-06D3607D466C</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="naz_tip_c" id="5C181369-45D7-BAC4-05DB-A3BCE36DB3AA">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>74ECF0CA-73AE-DDB8-CFED-D45E89F72DD5</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A05ECC54-96A3-CDC3-813D-4AD83B8FBF69" name="tip_cene_PK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>5B1AFAF0-F4B7-63BA-5FBD-C701222154D4</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D455688-3237-AB40-7539-1E0F3B2020E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="694C1F48-4C3E-0A9B-D3C3-A17C17428E85" name="tip_cene_naz_tip_c_UN">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>09925AE7-FE8F-1CA6-628B-D6D660A78E54</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C181369-45D7-BAC4-05DB-A3BCE36DB3AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

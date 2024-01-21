@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB26720D-0ACD-FD31-B7B5-F3072C92DB73" name="lokacija">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>82912467-FD64-149C-8CD3-6124E349A55C</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idl" id="CAFD936A-A772-AA39-98D9-D80F90749F29">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>E6605AA8-3071-19D6-DD77-863634366B1B</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="grad" id="0F16DC91-4ED4-D54B-4778-F72D18180CFA">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>3FBD1DF9-C788-0D48-683E-702480154EE1</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="drzava" id="C832FC14-93C3-B117-70B5-0F5272F65833">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>6F2F388C-1225-12A4-F770-6008CFA3F42D</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ulica" id="8D74B74E-BFA2-7C79-CE57-87E1C3429D71">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>D59BC0DE-197E-3229-362D-B4DB33661A26</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="br_ul" id="B0299C74-E945-D69E-6660-7E67C6B3798E">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>EDC25E51-1E79-9298-19E0-E26DF6F2EA39</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="post_br" id="3BA438AF-0430-0E46-E313-04F284C92153">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>37BC1E69-4FD4-492D-E186-017B4C1997C1</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<constraintName>chk_post_br</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="post_br &gt; 0"/>
+<implementationDef dbType="Oracle Database 11g" definition="post_br &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0879AD2F-9D4D-19C9-802E-41422D584D88" name="lokacija_PK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>9DD4A834-96A1-35F5-322F-6BDCD0D3533D</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CAFD936A-A772-AA39-98D9-D80F90749F29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

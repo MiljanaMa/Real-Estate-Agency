@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9B57F8E5-E2C4-DBC3-D2AC-92E3C905F671" name="bazen">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:55:23 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idb" id="9557F9DF-BEFE-B5E1-7E30-29F095EA55F2">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:55:29 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dubina" id="9496FA7D-6DDE-5250-8487-C469696624B4">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:56:28 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<constraintName>chk_dubina</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="dubina &gt; 0"/>
+<implementationDef dbType="Oracle Database 11g" definition="dubina &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="povrsina" id="41919F2C-A7E8-7544-2A2C-A7FE607A3B4A">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:56:56 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<constraintName>chk_povrsina</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="povrsina &gt; 0"/>
+<implementationDef dbType="Oracle Database 11g" definition="povrsina &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tip_baz" id="4144F62D-A9F3-4A36-A8E5-1F636694D9EB">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:57:11 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>68566854-59D7-3AC1-E2F3-905927980A66</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idn" id="CAF4165B-43DB-3C44-A572-50F5F38AB49D">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 19:06:53 UTC</createdTime>
+<generatorID>35A1FA06-5421-047E-D7F0-49E424E600A8</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<referedAttribute>6F8EA5F6-05D3-E736-1374-4B8F326A3549</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B84C96A1-36EF-8D05-D803-274235B345BC" name="Bazen PK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 19:07:01 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CAF4165B-43DB-3C44-A572-50F5F38AB49D</attributeRef>
+<attributeRef>9557F9DF-BEFE-B5E1-7E30-29F095EA55F2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

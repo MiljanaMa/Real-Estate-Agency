@@ -1,0 +1,186 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6E3FC2C6-C597-E899-11F0-2A7E686C035D" name="agent">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>1461FA97-ED51-A06D-B948-996F2E8F7A3B</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ida" id="0CDD0AE8-78E3-C6A0-DFD9-DC61EE3E927B">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>75374154-ABDB-B6FA-8B11-38B6439F6044</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="jmbg_a" id="E376EAA5-835A-8A6F-1378-BA95DFCB7567">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>5B4142D4-1372-C9A4-30AC-D837605E2AA0</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ime_a" id="A1A12AAA-D373-4DE2-716D-7FE9B489BC2D">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>9EBFE62E-1ED4-FC52-3BC6-69306DA4B330</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prz_a" id="75247464-D9C1-90B7-9F0D-6936ED8B348E">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>F41CAFB0-2AC3-4E39-CBBB-3292EA0779D5</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dat_rodj" id="159C06A9-BCF3-279A-07A2-EAB240B9B374">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>8AB1677E-D452-5EFF-84A0-375901E71C71</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="str_sprem" id="276259AE-9A84-D01B-7862-5CED2CEB7904">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>C877F8FC-9E5B-2888-B028-57966FC57092</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2836539E-FF80-679A-5DA7-ECA6FA9F70A0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="br_tel_a" id="D64474AF-0EC1-3071-43BF-ECD60637DE1B">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>90A2C13E-AFE9-1C4E-A21F-5CC83405BFD5</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="br_lic" id="B57818AC-6A1E-9E50-D8CA-F939A531614C">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>139E13FD-BB4C-E113-F2D0-A1A7C72715D3</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ida_nad" id="3AAA5E0C-1CF1-14D5-7CF1-B03C903E6A12">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>0DDB54F1-1542-EF06-CB10-CCB6F854CDE7</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B25A4895-E33E-31EC-77B6-CEB4FF47BE5D" referredColumn="0CDD0AE8-78E3-C6A0-DFD9-DC61EE3E927B"/>
+</associations>
+</Column>
+<Column name="plt" id="E833E411-2079-68FA-A67A-309398E91BEC">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>5E13BA49-672E-2100-78E8-EFF594B9DC1E</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<constraintName>chk_plt</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="plt&gt;=30000"/>
+<implementationDef dbType="Oracle Database 11g" definition="plt&gt;=30000"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7E8F123D-B9C7-FA75-3315-AAFFA261C67F" name="agent_PK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>1F3EF1FC-923E-D5B6-6937-352EE045A968</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0CDD0AE8-78E3-C6A0-DFD9-DC61EE3E927B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7159DE2C-7AFD-697F-8E15-8162342CBEE2" name="agent_jmbg_a_UN">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>28EFF74F-FCC7-4866-C172-E7DD628857BE</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E376EAA5-835A-8A6F-1378-BA95DFCB7567"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F24F1AE-2E71-D161-0951-D0264D9419F3" name="agent_br_lic_UN">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>E9DCEC78-D8B0-D1BA-6A01-87D4F2F7EFF2</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B57818AC-6A1E-9E50-D8CA-F939A531614C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="641EC8AE-F56E-144F-A119-2EE8B9A3DD07" name="agent_agent_FK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:16:13 UTC</createdTime>
+<generatorID>08DF73B3-7EC2-D39A-08F7-E5DFDD61BD4F</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AAA5E0C-1CF1-14D5-7CF1-B03C903E6A12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

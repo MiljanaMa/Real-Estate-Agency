@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="874BC9FE-A394-B33E-59E3-8DE958AAA146" name="pripada_tipu_oglasa">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:16:13 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idto" id="D7B350F9-F733-478B-7E3B-B04C894CD5A6">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:16:13 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="36316330-17F0-3367-217B-43D939A5BC68" referredColumn="9C509C0F-BD51-0975-A040-B936875477C9"/>
+</associations>
+</Column>
+<Column name="dat_o" id="2409878C-5607-687B-2AA7-36DF969B0898">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:16:13 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AED1B364-DFF2-69C1-597D-601E18300258" referredColumn="C112A1A6-E224-8FD4-D6FC-3F6EACA5C9F7"/>
+</associations>
+</Column>
+<Column name="idn" id="027BB433-ED58-5CD5-512C-FEFA5B698302">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:16:13 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AED1B364-DFF2-69C1-597D-601E18300258" referredColumn="B5783846-EB93-3346-C150-7F2098FA62A4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B8BFEC85-6EF2-87CF-9AEB-A2659AEBC7DA" name="pripada_tipu_oglasa_PK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:16:13 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7B350F9-F733-478B-7E3B-B04C894CD5A6"/>
+<colUsage columnID="2409878C-5607-687B-2AA7-36DF969B0898"/>
+<colUsage columnID="027BB433-ED58-5CD5-512C-FEFA5B698302"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="301C3558-9514-9767-9461-AA8393E3E5AD" name="pripada_tipu_o_tip_o_FK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:16:13 UTC</createdTime>
+<generatorID>9AD4368C-09F5-0B33-B4BC-FA8D805D0500</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7B350F9-F733-478B-7E3B-B04C894CD5A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AAE1A05B-A173-9131-2008-90AB0D1A8872" name="pripada_tipu_o_o_FK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:16:13 UTC</createdTime>
+<generatorID>9AD4368C-09F5-0B33-B4BC-FA8D805D0500</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2409878C-5607-687B-2AA7-36DF969B0898"/>
+<colUsage columnID="027BB433-ED58-5CD5-512C-FEFA5B698302"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

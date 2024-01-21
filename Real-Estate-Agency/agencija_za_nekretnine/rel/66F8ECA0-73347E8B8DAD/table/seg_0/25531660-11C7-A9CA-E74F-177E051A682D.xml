@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="25531660-11C7-A9CA-E74F-177E051A682D" name="kuca">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:34 UTC</createdTime>
+<generatorID>C7477331-BD30-196D-D1C0-A486DF994BE6</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idn" id="39DADACB-281B-321A-69A6-86A93020EF02">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:01:17 UTC</createdTime>
+<generatorID>6F8EA5F6-05D3-E736-1374-4B8F326A3549</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0EF0B708-5C20-F5F3-EEC9-2F5E060F5A49" referredColumn="501D62F1-A9DD-00AF-D4E3-2BD35FFF435F"/>
+</associations>
+</Column>
+<Column name="br_sprat" id="8228DD74-6D03-A9E6-FCB9-950749AB0029">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:04:16 UTC</createdTime>
+<generatorID>315C18E4-3645-77CB-BC52-87D72E6F604E</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<constraintName>chk_br_sprat</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="br_sprat &gt; 0"/>
+<implementationDef dbType="Oracle Database 11g" definition="br_sprat &gt; 0"/>
+</checkConstraint>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="povrs_plac" id="530D55C3-DD7B-81B6-9A9A-3F2648B35F3F">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:04:16 UTC</createdTime>
+<generatorID>73D652C9-D957-4AD5-CA4D-193741F2E39B</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<constraintName>chk_povrs_plac</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="povrs_plac &gt; 0"/>
+<implementationDef dbType="Oracle Database 11g" definition="povrs_plac &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="138E63F4-6CCF-4E51-F655-4A04C60D3E0F" name="kuca_PK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:01:17 UTC</createdTime>
+<generatorID>25E033CD-4AB0-A95B-8CFE-617668985C8C</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39DADACB-281B-321A-69A6-86A93020EF02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6236A36E-8F70-799F-AB8F-9C6054F4A783" name="kuca_nekretnina_FK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:16:13 UTC</createdTime>
+<generatorID>4A9D7977-520B-D8D7-5F4D-5E4294373B40</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39DADACB-281B-321A-69A6-86A93020EF02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

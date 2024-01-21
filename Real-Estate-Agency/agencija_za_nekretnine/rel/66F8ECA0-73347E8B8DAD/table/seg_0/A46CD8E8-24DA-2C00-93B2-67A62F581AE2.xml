@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A46CD8E8-24DA-2C00-93B2-67A62F581AE2" name="poslovni_prostor">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:34 UTC</createdTime>
+<generatorID>053F5818-33FB-39EA-047F-CF7D529668B0</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idn" id="185F115F-8CA7-BCC7-4065-A36BBD13BAC3">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:04:16 UTC</createdTime>
+<generatorID>6F8EA5F6-05D3-E736-1374-4B8F326A3549</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="616FD9E8-3481-D831-77E9-E5454918F46D" referredColumn="501D62F1-A9DD-00AF-D4E3-2BD35FFF435F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="10D01929-F312-07DE-272E-9A38EF42BE2A" name="poslovni_prostor_PK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:04:16 UTC</createdTime>
+<generatorID>25E033CD-4AB0-A95B-8CFE-617668985C8C</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="185F115F-8CA7-BCC7-4065-A36BBD13BAC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B706A51-6953-2487-A6C8-BE4107F7A2FC" name="poslovni_prostor_nekretnina_FK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:16:13 UTC</createdTime>
+<generatorID>6620B1E6-8998-A3F0-4CAA-27639175F6AE</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="185F115F-8CA7-BCC7-4065-A36BBD13BAC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A3AFB398-7FCE-91B9-CB66-A012484A2BEF" name="parking_mesto">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:34:40 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idpm" id="9E69E9C9-8769-1130-5107-F2F8BB64487A">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:34:51 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="povrsina_pm" id="F5D709BB-A3EA-0A84-AF35-88CE616016CA">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:35:02 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<constraintName>povrsina_nenula</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="povrsina_pm &gt; 0"/>
+<implementationDef dbType="Oracle Database 11g" definition="povrsina_pm &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tip_pm" id="8221323E-8F99-6904-918D-8B5199511DB4">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:36:42 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DEE36545-ABB1-DE9A-7540-BA94B4B1E001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idn" id="0BD87EAF-A61F-3DD1-2907-2D8CD64A30F9">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 19:05:02 UTC</createdTime>
+<generatorID>73552DA5-3A86-2849-B9E0-781CFF3FFD5D</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<referedAttribute>6F8EA5F6-05D3-E736-1374-4B8F326A3549</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2FFC0B97-DC72-0C7F-5DC6-D40F7A0553ED" name="Parking mesto PK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:35:00 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9E69E9C9-8769-1130-5107-F2F8BB64487A</attributeRef>
+<attributeRef>0BD87EAF-A61F-3DD1-2907-2D8CD64A30F9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="01C54C51-6E08-F051-6331-73DD6D815CCC" name="parking_mesto">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>A3AFB398-7FCE-91B9-CB66-A012484A2BEF</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idpm" id="835417AC-DBE5-2989-9560-C43529B1DE65">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>9E69E9C9-8769-1130-5107-F2F8BB64487A</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="povrsina_pm" id="084FEFA2-C74B-939A-826B-8351C4F4F660">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>F5D709BB-A3EA-0A84-AF35-88CE616016CA</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<constraintName>povrsina_nenula</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="povrsina_pm &gt; 0"/>
+<implementationDef dbType="Oracle Database 11g" definition="povrsina_pm &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip_pm" id="33AA1B11-2334-8C6F-FF61-9BD7DE0289A2">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>8221323E-8F99-6904-918D-8B5199511DB4</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DEE36545-ABB1-DE9A-7540-BA94B4B1E001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idn" id="CFF17A25-4641-15AD-56EB-000F21320623">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>0BD87EAF-A61F-3DD1-2907-2D8CD64A30F9</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C3596AFB-968C-A0E4-438A-9DBE3CC96E8E" referredColumn="501D62F1-A9DD-00AF-D4E3-2BD35FFF435F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E8A277E1-FE8E-1403-95AA-716245ABE129" name="parking_mesto_PK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:00:33 UTC</createdTime>
+<generatorID>2FFC0B97-DC72-0C7F-5DC6-D40F7A0553ED</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="835417AC-DBE5-2989-9560-C43529B1DE65"/>
+<colUsage columnID="CFF17A25-4641-15AD-56EB-000F21320623"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1908C68D-8840-FC93-A05D-1B5F9AD986CF" name="parking_mesto_nekretnina_FK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 09:16:13 UTC</createdTime>
+<generatorID>73552DA5-3A86-2849-B9E0-781CFF3FFD5D</generatorID>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFF17A25-4641-15AD-56EB-000F21320623"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

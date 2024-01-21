@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7EFF6655-0850-D8B0-8539-EA390953BFC9" name="namena">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:40:14 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idnam" id="B77111B9-050C-50A5-998E-C14F933956B8">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:40:20 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="naz_tip_n" id="1302CE99-B575-7ADD-A19F-CA810B2AD66C">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:40:32 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D365B77D-A0D0-C5A5-7794-8FE1B7C6C783" name="Namena PK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:40:30 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B77111B9-050C-50A5-998E-C14F933956B8</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="EAED1D56-650D-AE75-FA90-05CABF25CD81" name="naz_tip_n_jedin">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-13 14:43:28 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="false"/>
+</engineerTo>
+<newElementsIDs>1302CE99-B575-7ADD-A19F-CA810B2AD66C</newElementsIDs>
+<usedAttributes>
+<attributeRef>1302CE99-B575-7ADD-A19F-CA810B2AD66C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

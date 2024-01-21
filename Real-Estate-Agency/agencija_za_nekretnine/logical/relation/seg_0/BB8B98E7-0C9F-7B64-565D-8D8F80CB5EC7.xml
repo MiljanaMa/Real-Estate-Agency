@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="sklapa_ugovor" directorySegmentName="seg_0" id="BB8B98E7-0C9F-7B64-565D-8D8F80CB5EC7">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-13 12:38:48 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<sourcePk>1F3EF1FC-923E-D5B6-6937-352EE045A968</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1461FA97-ED51-A06D-B948-996F2E8F7A3B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>18440C00-D7D9-67F8-01CB-4582375FD85A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="dat_potpisivanja" id="23213DBD-E075-19A5-6F32-AA620AC4CE43">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-13 22:24:48 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="provizija" id="0E623CB3-3F98-2393-00D7-65CCCAC9D167">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-13 22:25:36 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<constraintName>chk_provizija</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="provizija &gt;= 0"/>
+<implementationDef dbType="Oracle Database 11g" definition="provizija &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>50</endValue>
+</rangeDef>
+</listOfRanges>
+</attribute>
+</attributes>
+</Relation>

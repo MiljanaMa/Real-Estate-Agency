@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pripada_tipu_cene" directorySegmentName="seg_0" id="C78637BF-EBC3-EA9F-1407-D854AE5A23B8">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 19:09:33 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<sourcePk>5B1AFAF0-F4B7-63BA-5FBD-C701222154D4</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FFFFF06F-56AB-2DF3-3DC2-DE4B1CD855C1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>86F51F45-A599-712F-C118-8C4E4EEE4AAF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

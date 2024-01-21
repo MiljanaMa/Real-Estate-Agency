@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="agencija_za_nekretnine" id="65D2D430-9C3D-09C2-C39D-DCCF28D9900A" version="3.5">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:16:19 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>65D2D430-9C3D-09C2-C39D-DCCF28D9900A</designId>
+</OSDM_Design>

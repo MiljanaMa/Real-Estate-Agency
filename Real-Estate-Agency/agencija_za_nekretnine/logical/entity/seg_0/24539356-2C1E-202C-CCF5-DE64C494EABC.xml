@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="24539356-2C1E-202C-CCF5-DE64C494EABC" name="klijent">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:51:50 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="false"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<generateDiscrimColumn>true</generateDiscrimColumn>
+<discriminatorAttributeID>8C54040F-F506-F68B-F53E-E831E56E3B04</discriminatorAttributeID>
+<discriminatorColumnName>tip_k</discriminatorColumnName>
+<discriminatorValue>tip_k</discriminatorValue>
+<completeSubtypes>true</completeSubtypes>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idk" id="8D77ADFC-D5F7-D57E-926E-A4F145DB3D39">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:51:58 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="jmbg_k" id="0FC8A856-CE6B-EBE9-1F5A-BF29EE483720">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:52:10 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ime_k" id="CC3F3068-4BB7-86C4-1472-629C30A3030E">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:52:39 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prz_k" id="99DF1CFA-6BB1-56E3-BCBE-08EA654AFAE0">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:52:51 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vrsta_pravnog_sub" id="DBEBE6EC-C192-D1D4-2CAF-8DC9B4B481CA">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:53:03 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C37CFEA3-89E0-1D88-A59F-D35CCFA49ABD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tip_k" id="197AB48B-6E36-B2CB-157F-02065019B314">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-15 07:59:08 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE229D1-EB5B-3956-5132-28D69C2E93A8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A9D409AE-8A27-DB3B-2B96-99CC6B464F7C" name="Klijent PK">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-09 18:52:09 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8D77ADFC-D5F7-D57E-926E-A4F145DB3D39</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="3473746A-5D67-3605-DBF5-169882D23610" name="unique_jmbg_k">
+<createdBy>Miljana</createdBy>
+<createdTime>2024-01-14 08:20:09 UTC</createdTime>
+<ownerDesignName>agencija_za_nekretnine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="66F8ECA0-9B1F-2178-CFCC-73347E8B8DAD" value="false"/>
+</engineerTo>
+<newElementsIDs>0FC8A856-CE6B-EBE9-1F5A-BF29EE483720</newElementsIDs>
+<usedAttributes>
+<attributeRef>0FC8A856-CE6B-EBE9-1F5A-BF29EE483720</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
